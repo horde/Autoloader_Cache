@@ -16,7 +16,7 @@
   <email>slusarz@horde.org</email>
   <active>yes</active>
  </developer>
- <date>2017-09-19</date>
+ <date>2017-10-17</date>
  <version>
   <release>2.1.4</release>
   <api>2.1.0</api>
@@ -36,15 +36,6 @@
      <tasks:replace from="/usr/bin/env php" to="php_bin" type="pear-config" />
     </file>
    </dir> <!-- /bin -->
-   <dir name="doc">
-    <dir name="Horde">
-     <dir name="Autoloader">
-      <dir name="Cache">
-       <file name="COPYING" role="doc" />
-      </dir> <!-- /doc/Horde/Autoloader/Cache -->
-     </dir> <!-- /doc/Horde/Autoloader -->
-    </dir> <!-- /doc/Horde -->
-   </dir> <!-- /doc -->
    <dir name="lib">
     <dir name="Horde">
      <dir name="Autoloader">
@@ -55,6 +46,7 @@
      </dir> <!-- /lib/Horde/Autoloader -->
     </dir> <!-- /lib/Horde -->
    </dir> <!-- /lib -->
+   <file name="LICENSE" role="doc" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -109,9 +101,9 @@
  <phprelease>
   <filelist>
    <install as="horde-autoloader-cache-prune" name="bin/horde-autoloader-cache-prune" />
-   <install as="COPYING" name="doc/Horde/Autoloader/Cache/COPYING" />
    <install as="Horde/Autoloader/Cache.php" name="lib/Horde/Autoloader/Cache.php" />
    <install as="Horde/Autoloader/Cache/Bootstrap.php" name="lib/Horde/Autoloader/Cache/Bootstrap.php" />
+   <install as="LICENSE" name="LICENSE" />
   </filelist>
  </phprelease>
  <changelog>
@@ -378,7 +370,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-09-19</date>
+   <date>2017-10-17</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * 
