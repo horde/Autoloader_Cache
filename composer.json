@@ -16,8 +16,8 @@
             "role": "developer"
         }
     ],
-    "version": "2.1.3",
-    "time": "2017-09-19",
+    "version": "2.1.4",
+    "time": "2017-10-17",
     "repositories": [
         {
             "type": "pear",
@@ -26,12 +26,12 @@
     ],
     "require": {
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Autoloader": "^2@stable",
+        "pear-pear.horde.org/Horde_Autoloader": "^2",
         "ext-json": "*"
     },
     "suggest": {
         "pear-pear.horde.org/horde_lz4": "*",
-        "pear-pecl.php.net/lzf": "^1.5.2@stable",
+        "pear-pecl.php.net/lzf": "^1.5.2",
         "pear-pecl.php.net/msgpack": "*",
         "ext-apc": "*",
         "ext-eaccelerator": "*",
