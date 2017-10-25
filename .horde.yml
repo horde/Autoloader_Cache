@@ -6,3 +6,36 @@ description: |
   Extension of the Horde_Autoloader that implements caching of class-file-maps. The caching method is determined automatically from the list of supported cache backends: APC, XCache, eAccelerator, local file system.
 list: dev
 type: library
+homepage: https://www.horde.org/libraries/Horde_Autoloader_Cache
+authors:
+  -
+    name: Jan Schneider
+    user: jan
+    email: jan@horde.org
+    active: true
+    role: lead
+version:
+  release: 2.1.4
+  api: 2.1.0
+state:
+  release: stable
+  api: stable
+license:
+  identifier: LGPL-2.1
+  uri: http://www.horde.org/licenses/lgpl21
+dependencies:
+  required:
+    php: ^5.3 || ^7
+    pear:
+      pear.horde.org/Horde_Autoloader: ^2
+    ext:
+      json: '*'
+  optional:
+    pear:
+      pear.horde.org/horde_lz4: '*'
+      pecl.php.net/lzf: ^1.5.2
+      pecl.php.net/msgpack: '*'
+    ext:
+      apc: '*'
+      eaccelerator: '*'
+      xcache: '*'
