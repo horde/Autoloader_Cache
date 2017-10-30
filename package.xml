@@ -16,7 +16,7 @@
   <email>slusarz@horde.org</email>
   <active>yes</active>
  </developer>
- <date>2017-09-19</date>
+ <date>2017-10-30</date>
  <version>
   <release>2.1.4</release>
   <api>2.1.0</api>
@@ -40,6 +40,7 @@
     <dir name="Horde">
      <dir name="Autoloader">
       <dir name="Cache">
+       <file name="CHANGES" role="doc" />
        <file name="COPYING" role="doc" />
       </dir> <!-- /doc/Horde/Autoloader/Cache -->
      </dir> <!-- /doc/Horde/Autoloader -->
@@ -109,6 +110,7 @@
  <phprelease>
   <filelist>
    <install as="horde-autoloader-cache-prune" name="bin/horde-autoloader-cache-prune" />
+   <install as="CHANGES" name="doc/Horde/Autoloader/Cache/CHANGES" />
    <install as="COPYING" name="doc/Horde/Autoloader/Cache/COPYING" />
    <install as="Horde/Autoloader/Cache.php" name="lib/Horde/Autoloader/Cache.php" />
    <install as="Horde/Autoloader/Cache/Bootstrap.php" name="lib/Horde/Autoloader/Cache/Bootstrap.php" />
@@ -378,7 +380,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-09-19</date>
+   <date>2017-10-30</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * 
