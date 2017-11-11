@@ -32,9 +32,15 @@ dependencies:
       json: '*'
   optional:
     pear:
-      pear.horde.org/horde_lz4: '*'
-      pecl.php.net/lzf: ^1.5.2
-      pecl.php.net/msgpack: '*'
+      pear.horde.org/horde_lz4:
+        version: '*'
+        providesextension: horde_lz4
+      pecl.php.net/lzf:
+        version: ^1.5.2
+        providesextension: lzf
+      pecl.php.net/msgpack:
+        version: '*'
+        providesextension: msgpack
     ext:
       apc: '*'
       eaccelerator: '*'
