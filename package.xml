@@ -2,8 +2,9 @@
 <package packagerversion="1.9.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>Horde_Autoloader_Cache</name>
  <channel>pear.horde.org</channel>
- <summary>Cache for the Horde_Autoloader library</summary>
- <description>Extension of the Horde_Autoloader that implements caching of class-file-maps. The caching method is determined automatically from the list of supported cache backends: APC, XCache, eAccelerator, local file system.</description>
+ <summary>Caching library for Horde_Autoloader</summary>
+ <description>Extension of the Horde_Autoloader that implements caching of class-file-maps. The caching method is determined automatically from the list of supported cache backends: APC, XCache, eAccelerator, local file system.
+</description>
  <lead>
   <name>Jan Schneider</name>
   <user>jan</user>
@@ -14,9 +15,9 @@
   <name>Michael Slusarz</name>
   <user>slusarz</user>
   <email>slusarz@horde.org</email>
-  <active>yes</active>
+  <active>no</active>
  </developer>
- <date>2017-10-30</date>
+ <date>2017-11-14</date>
  <version>
   <release>2.1.4</release>
   <api>2.1.0</api>
@@ -89,6 +90,8 @@
     <name>lzf</name>
     <channel>pecl.php.net</channel>
     <min>1.5.2</min>
+    <max>2.0.0alpha1</max>
+    <exclude>2.0.0alpha1</exclude>
     <providesextension>lzf</providesextension>
    </package>
    <package>
@@ -380,7 +383,7 @@
    <stability>
     <release>stable</release>
     <api>stable</api></stability>
-   <date>2017-10-30</date>
+   <date>2017-11-14</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * 
