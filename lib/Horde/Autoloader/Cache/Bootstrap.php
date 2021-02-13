@@ -125,9 +125,9 @@ class Horde_Autoloader_Cache_Bootstrap
 
         return ($data === false)
             ? false
-            : ($this->_mask & self::MSGPACK)
+            : (($this->_mask & self::MSGPACK)
                   ? msgpack_unpack($data)
-                  : @json_decode($data, true);
+                  : @json_decode($data, true));
     }
 
     /**
