@@ -19,7 +19,7 @@
  </developer>
  <date>2021-02-13</date>
  <version>
-  <release>2.1.4</release>
+  <release>2.1.5</release>
   <api>2.1.0</api>
  </version>
  <stability>
@@ -28,7 +28,7 @@
  </stability>
  <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
  <notes>
-* [mjr] Fix deprecation warnings about unparenthesized ternary operator.
+* 
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -120,6 +120,26 @@
   </filelist>
  </phprelease>
  <changelog>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   <release>
    <version>
     <release>1.0.0RC1</release>
@@ -420,10 +440,25 @@
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2017-10-17</date>
+   <date>2021-02-13</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * [mjr] Fix deprecation warnings about unparenthesized ternary operator.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>2.1.5</release>
+    <api>2.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2021-02-13</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* 
    </notes>
   </release>
  </changelog>
