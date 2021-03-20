@@ -1,4 +1,15 @@
 ---
+3.0.0alpha1:
+  api: 3.0.0
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-03-17
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |
+    [rla] Add H6 composer metadata.
 2.1.4:
   api: 2.1.0
   state:

@@ -21,33 +21,26 @@ authors:
     active: false
     role: developer
 version:
-  release: 2.1.4
-  api: 2.1.0
+  release: 3.0.0alpha1
+  api: 3.0.0alpha1
 state:
-  release: stable
-  api: stable
+  release: alpha
+  api: alpha
 license:
   identifier: LGPL-2.1
   uri: http://www.horde.org/licenses/lgpl21
 dependencies:
   required:
-    php: ^5.3 || ^7
-    pear:
-      pear.horde.org/Horde_Autoloader: ^2
+    php: ^7
+    composer:
+      horde/autoloader: ^3
     ext:
       json: '*'
   optional:
-    pear:
-      pear.horde.org/horde_lz4:
-        version: '*'
-        providesextension: horde_lz4
-      pecl.php.net/lzf:
-        version: ^1.5.2
-        providesextension: lzf
-      pecl.php.net/msgpack:
-        version: '*'
-        providesextension: msgpack
     ext:
+      horde_lz4: '*'
+      lzf: '*'
+      msgpack: '*'
       apc: '*'
       eaccelerator: '*'
       xcache: '*'

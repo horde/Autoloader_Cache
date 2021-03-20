@@ -1,5 +1,5 @@
 {
-    "name": "horde/autoloader-cache",
+    "name": "horde/autoloader_cache",
     "description": "Caching library for Horde_Autoloader",
     "type": "library",
     "homepage": "https://www.horde.org/libraries/Horde_Autoloader_Cache",
@@ -16,34 +16,32 @@
             "role": "developer"
         }
     ],
-    "version": "2.1.4",
-    "time": "2017-11-11",
+    "time": "2021-03-20",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com/"
         }
     ],
     "require": {
-        "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Autoloader": "^2",
+        "php": "^7",
+        "horde/autoloader": "^3",
         "ext-json": "*"
     },
     "suggest": {
-        "pear-pear.horde.org/horde_lz4": "*",
-        "pear-pecl.php.net/lzf": "^1.5.2",
-        "pear-pecl.php.net/msgpack": "*",
+        "ext-horde_lz4": "*",
+        "ext-lzf": "*",
+        "ext-msgpack": "*",
         "ext-apc": "*",
         "ext-eaccelerator": "*",
         "ext-xcache": "*"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Autoloader_Cache": "2.*",
-        "pear-horde/Horde_Autoloader_Cache": "2.*"
     },
     "autoload": {
         "psr-0": {
             "Horde_Autoloader_Cache": "lib/"
         }
-    }
+    },
+    "bin": [
+        "bin/horde-autoloader-cache-prune"
+    ]
 }
