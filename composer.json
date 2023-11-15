@@ -3,7 +3,7 @@
     "description": "Caching library for Horde_Autoloader",
     "type": "library",
     "homepage": "https://www.horde.org/libraries/Horde_Autoloader_Cache",
-    "license": "LGPL-2.1",
+    "license": "LGPL-2.1-only",
     "authors": [
         {
             "name": "Jan Schneider",
