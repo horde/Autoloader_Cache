@@ -3,7 +3,7 @@
     "description": "Caching library for Horde_Autoloader",
     "type": "library",
     "homepage": "https://www.horde.org/libraries/Horde_Autoloader_Cache",
-    "license": "LGPL-2.1",
+    "license": "LGPL-2.1-only",
     "authors": [
         {
             "name": "Jan Schneider",
@@ -19,27 +19,21 @@
     "version": "2.1.4",
     "time": "2017-11-11",
     "repositories": [
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        }
     ],
     "require": {
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Autoloader": "^2",
+        "horde/autoloader": "^2",
         "ext-json": "*"
     },
     "suggest": {
-        "pear-pear.horde.org/horde_lz4": "*",
-        "pear-pecl.php.net/lzf": "^1.5.2",
-        "pear-pecl.php.net/msgpack": "*",
+        "ext-lz4": "*",
+        "ext-lzf": "^1.5.2",
+        "ext-msgpack": "*",
         "ext-apc": "*",
         "ext-eaccelerator": "*",
         "ext-xcache": "*"
     },
     "replace": {
-        "pear-pear.horde.org/Horde_Autoloader_Cache": "2.*",
-        "pear-horde/Horde_Autoloader_Cache": "2.*"
     },
     "autoload": {
         "psr-0": {
