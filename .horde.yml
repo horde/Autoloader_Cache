@@ -21,10 +21,10 @@ authors:
     active: false
     role: developer
 version:
-  release: 3.0.0alpha1
+  release: 3.0.0-beta1
   api: 3.0.0alpha1
 state:
-  release: alpha
+  release: beta
   api: alpha
 license:
   identifier: LGPL-2.1
@@ -44,3 +44,4 @@ dependencies:
       apc: '*'
       eaccelerator: '*'
       xcache: '*'
+vendor: horde

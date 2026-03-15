@@ -3,7 +3,7 @@
     "description": "Caching library for Horde_Autoloader",
     "type": "library",
     "homepage": "https://www.horde.org/libraries/Horde_Autoloader_Cache",
-    "license": "LGPL-2.1-only",
+    "license": "LGPL-2.1",
     "authors": [
         {
             "name": "Jan Schneider",
@@ -16,18 +16,14 @@
             "role": "developer"
         }
     ],
-    "time": "2021-03-20",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://horde-satis.maintaina.com/"
-        }
-    ],
+    "time": "2026-03-15",
+    "repositories": [],
     "require": {
         "php": "^7",
-        "horde/autoloader": "^3",
+        "horde/autoloader": "^3 || dev-FRAMEWORK_6_0",
         "ext-json": "*"
     },
+    "require-dev": {},
     "suggest": {
         "ext-horde_lz4": "*",
         "ext-lzf": "*",
@@ -41,7 +37,16 @@
             "Horde_Autoloader_Cache": "lib/"
         }
     },
+    "autoload-dev": {},
     "bin": [
         "bin/horde-autoloader-cache-prune"
-    ]
+    ],
+    "config": {
+        "allow-plugins": {}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-FRAMEWORK_6_0": "3.x-dev"
+        }
+    }
 }

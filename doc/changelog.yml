@@ -10,6 +10,37 @@
     uri: http://www.horde.org/licenses/lgpl21
   notes: |
     [rla] Add H6 composer metadata.
+3.0.0-beta1:
+  api: 3.0.0-beta1
+  state:
+    release: beta
+    api: beta
+  date: 2026-03-15
+  license:
+    identifier: LGPL-2.1
+    uri: https://spdx.org/licenses/LGPL-2.1.html
+  notes: |-
+    SPDX license identifier more pedantic now.
+    Add CI job for satis repo update
+    Add phpdoc ci action
+    Upgrade for H6 branch
+    [mjr] Fix deprecation warnings about unparenthesized ternary operator.
+    Fix deprecation warnings about unparenthesized ternary operator.
+    Standardize descriptions.
+    Update package definitions.
+    Add missing authors.
+    Update dependency constraints.
+    package.xml must not contain empty <notes> tags.
+    Create CHANGES for all components.
+    Regenerate package.xml from changelog.yml.
+    Build changelog.yml from existing changelog(s).
+    Update .horde.yml with extended information.
+    Update composer.json.
+    Update references to COPYING files.
+    Use LICENSE consistently and move to base directory.
+    Use https URLs.
+    Add Travis configuration and .gitignore files.
+    Development mode for Horde_Autoloader_Cache-2.1.4
 2.1.4:
   api: 2.1.0
   state:
@@ -147,17 +178,6 @@
     uri: http://www.horde.org/licenses/lgpl21
   notes: |
     [mms] Compress cached data with LZF, if the PECL module is available.
-2.0.0:
-  api: 1.0.0
-  state:
-    release: stable
-    api: stable
-  date: 2012-10-30
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First stable release for Horde 5.
 2.0.0beta1:
   api: 1.0.0
   state:
@@ -180,6 +200,17 @@
     uri: http://www.horde.org/licenses/lgpl21
   notes: |
     First alpha release for Horde 5.
+2.0.0:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2012-10-30
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |
+    First stable release for Horde 5.
 1.0.1:
   api: 1.0.0
   state:
@@ -191,17 +222,6 @@
     uri: http://www.horde.org/licenses/lgpl21
   notes: |
     [jan] Fix horde-autoloader-cache-prune script.
-1.0.0:
-  api: 1.0.0
-  state:
-    release: stable
-    api: stable
-  date: 2011-12-21
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First stable release.
 1.0.0RC3:
   api: 1.0.0RC3
   state:
@@ -236,3 +256,14 @@
     uri: http://www.horde.org/licenses/lgpl21
   notes: |
     First release candidate.
+1.0.0:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2011-12-21
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |
+    First stable release.
