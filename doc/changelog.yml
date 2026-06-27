@@ -1,15 +1,14 @@
 ---
-3.0.0alpha1:
+3.0.0:
   api: 3.0.0
   state:
-    release: alpha
-    api: alpha
-  date: 2021-03-17
+    release: stable
+    api: stable
+  date: 2026-06-27
   license:
     identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [rla] Add H6 composer metadata.
+    uri: https://spdx.org/licenses/LGPL-2.1.html
+  notes: "chore: refresh qc fixes and platform deps\nchore: Update workflow dependency"
 3.0.0-beta1:
   api: 3.0.0-beta1
   state:
@@ -19,28 +18,17 @@
   license:
     identifier: LGPL-2.1
     uri: https://spdx.org/licenses/LGPL-2.1.html
-  notes: |-
-    SPDX license identifier more pedantic now.
-    Add CI job for satis repo update
-    Add phpdoc ci action
-    Upgrade for H6 branch
-    [mjr] Fix deprecation warnings about unparenthesized ternary operator.
-    Fix deprecation warnings about unparenthesized ternary operator.
-    Standardize descriptions.
-    Update package definitions.
-    Add missing authors.
-    Update dependency constraints.
-    package.xml must not contain empty <notes> tags.
-    Create CHANGES for all components.
-    Regenerate package.xml from changelog.yml.
-    Build changelog.yml from existing changelog(s).
-    Update .horde.yml with extended information.
-    Update composer.json.
-    Update references to COPYING files.
-    Use LICENSE consistently and move to base directory.
-    Use https URLs.
-    Add Travis configuration and .gitignore files.
-    Development mode for Horde_Autoloader_Cache-2.1.4
+  notes: "SPDX license identifier more pedantic now.\nAdd CI job for satis repo update\nAdd phpdoc ci action\nUpgrade for H6 branch\n[mjr] Fix deprecation warnings about unparenthesized ternary operator.\nFix deprecation warnings about unparenthesized ternary operator.\nStandardize descriptions.\nUpdate package definitions.\nAdd missing authors.\nUpdate dependency constraints.\npackage.xml must not contain empty <notes> tags.\nCreate CHANGES for all components.\nRegenerate package.xml from changelog.yml.\nBuild changelog.yml from existing changelog(s).\nUpdate .horde.yml with extended information.\nUpdate composer.json.\nUpdate references to COPYING files.\nUse LICENSE consistently and move to base directory.\nUse https URLs.\nAdd Travis configuration and .gitignore files.\nDevelopment mode for Horde_Autoloader_Cache-2.1.4"
+3.0.0alpha1:
+  api: 3.0.0
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-03-17
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "[rla] Add H6 composer metadata.\n"
 2.1.4:
   api: 2.1.0
   state:
@@ -50,8 +38,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mjr] Fix deprecation warnings about unparenthesized ternary operator.
+  notes: "[mjr] Fix deprecation warnings about unparenthesized ternary operator.\n"
 2.1.3:
   api: 2.1.0
   state:
@@ -61,8 +48,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Mark PHP 7 as supported.
+  notes: "[jan] Mark PHP 7 as supported.\n"
 2.1.2:
   api: 2.1.0
   state:
@@ -72,8 +58,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Fix Composer file.
+  notes: "[jan] Fix Composer file.\n"
 2.1.1:
   api: 2.1.0
   state:
@@ -83,8 +68,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Handle a cache miss by trying to load the class in its new location.
+  notes: "[mms] Handle a cache miss by trying to load the class in its new location.\n"
 2.1.0:
   api: 2.1.0
   state:
@@ -94,8 +78,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Abstract caching logic into Horde_Autoloader_Cache_Bootstrap class.
+  notes: "[mms] Abstract caching logic into Horde_Autoloader_Cache_Bootstrap class.\n"
 2.0.7:
   api: 1.0.0
   state:
@@ -105,10 +88,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Use more efficient hashing algorithm, if available.
-    [mms] Saving cache data should be handled in a shutdown function, not a destructor.
-    [mms] Add Horde-specific prefix to filesystem cache name to allow for easy identification.
+  notes: "[mms] Use more efficient hashing algorithm, if available.\n[mms] Saving cache data should be handled in a shutdown function, not a destructor.\n[mms] Add Horde-specific prefix to filesystem cache name to allow for easy identification.\n"
 2.0.6:
   api: 1.0.0
   state:
@@ -118,8 +98,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Support msgpack for serializing the map lookup.
+  notes: "[mms] Support msgpack for serializing the map lookup.\n"
 2.0.5:
   api: 1.0.0
   state:
@@ -129,8 +108,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Improved error handling/logging when system temporary directory is not accessible.
+  notes: "[mms] Improved error handling/logging when system temporary directory is not accessible.\n"
 2.0.4:
   api: 1.0.0
   state:
@@ -140,9 +118,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Don't cache missing class paths.
-    [mms] Purging the autoloader cache no longer requires knowledge of the various SERVER_NAME settings used on a given system.
+  notes: "[mms] Don't cache missing class paths.\n[mms] Purging the autoloader cache no longer requires knowledge of the various SERVER_NAME settings used on a given system.\n"
 2.0.3:
   api: 1.0.0
   state:
@@ -152,10 +128,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Additional sanity checking when trying to load from cache.
-    [mms] Add support for horde_lz4 for compressing cache data.
-    [mms] Better error-checking when uncompressing cache data.
+  notes: "[mms] Additional sanity checking when trying to load from cache.\n[mms] Add support for horde_lz4 for compressing cache data.\n[mms] Better error-checking when uncompressing cache data.\n"
 2.0.2:
   api: 1.0.0
   state:
@@ -165,8 +138,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Improve dependency detection.
+  notes: "[jan] Improve dependency detection.\n"
 2.0.1:
   api: 1.0.0
   state:
@@ -176,30 +148,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Compress cached data with LZF, if the PECL module is available.
-2.0.0beta1:
-  api: 1.0.0
-  state:
-    release: beta
-    api: stable
-  date: 2012-07-19
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First beta release for Horde 5.
-2.0.0alpha1:
-  api: 1.0.0
-  state:
-    release: alpha
-    api: stable
-  date: 2012-07-05
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First alpha release for Horde 5.
+  notes: "[mms] Compress cached data with LZF, if the PECL module is available.\n"
 2.0.0:
   api: 1.0.0
   state:
@@ -209,8 +158,27 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First stable release for Horde 5.
+  notes: "First stable release for Horde 5.\n"
+2.0.0beta1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: stable
+  date: 2012-07-19
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "First beta release for Horde 5.\n"
+2.0.0alpha1:
+  api: 1.0.0
+  state:
+    release: alpha
+    api: stable
+  date: 2012-07-05
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "First alpha release for Horde 5.\n"
 1.0.1:
   api: 1.0.0
   state:
@@ -220,42 +188,7 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Fix horde-autoloader-cache-prune script.
-1.0.0RC3:
-  api: 1.0.0RC3
-  state:
-    release: beta
-    api: beta
-  date: 2011-12-13
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [jan] Include server name and file path in cache key to allow multiple Horde installations.
-1.0.0RC2:
-  api: 1.0.0RC2
-  state:
-    release: beta
-    api: beta
-  date: 2011-12-06
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    [mms] Fix logic error that prevented non-existent class names from being cached.
-    [mms] Only save cached list if it has changed during this access.
-1.0.0RC1:
-  api: 1.0.0RC1
-  state:
-    release: beta
-    api: beta
-  date: 2011-11-22
-  license:
-    identifier: LGPL-2.1
-    uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First release candidate.
+  notes: "[jan] Fix horde-autoloader-cache-prune script.\n"
 1.0.0:
   api: 1.0.0
   state:
@@ -265,5 +198,34 @@
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
-  notes: |
-    First stable release.
+  notes: "First stable release.\n"
+1.0.0RC3:
+  api: 1.0.0RC3
+  state:
+    release: beta
+    api: beta
+  date: 2011-12-13
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "[jan] Include server name and file path in cache key to allow multiple Horde installations.\n"
+1.0.0RC2:
+  api: 1.0.0RC2
+  state:
+    release: beta
+    api: beta
+  date: 2011-12-06
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "[mms] Fix logic error that prevented non-existent class names from being cached.\n[mms] Only save cached list if it has changed during this access.\n"
+1.0.0RC1:
+  api: 1.0.0RC1
+  state:
+    release: beta
+    api: beta
+  date: 2011-11-22
+  license:
+    identifier: LGPL-2.1
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: "First release candidate.\n"
