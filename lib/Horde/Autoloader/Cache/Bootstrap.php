@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2011-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -29,18 +30,18 @@
 class Horde_Autoloader_Cache_Bootstrap
 {
     /* Cache types. */
-    const APC = 1;
-    const XCACHE = 2;
-    const EACCELERATOR = 4;
-    const TEMPFILE = 8;
+    public const APC = 1;
+    public const XCACHE = 2;
+    public const EACCELERATOR = 4;
+    public const TEMPFILE = 8;
 
     /* Compress types. */
-    const LZ4 = 16;
-    const LZF = 32;
+    public const LZ4 = 16;
+    public const LZF = 32;
 
     /* Serialize types. */
-    const MSGPACK = 64;
-    const JSON = 128;
+    public const MSGPACK = 64;
+    public const JSON = 128;
 
     /**
      * The storage parameters mask.
@@ -62,7 +63,7 @@ class Horde_Autoloader_Cache_Bootstrap
      * @param array $opts  Options:
      *   - tempdir: (string) Use this path as the temporary directory.
      */
-    public function __construct(array $opts = array())
+    public function __construct(array $opts = [])
     {
         if (extension_loaded('apc')) {
             $this->_mask |= self::APC;
@@ -70,10 +71,9 @@ class Horde_Autoloader_Cache_Bootstrap
             $this->_mask |= self::XCACHE;
         } elseif (extension_loaded('eaccelerator')) {
             $this->_mask |= self::EACCELERATOR;
-        } else{
-            $tempdir = isset($opts['tempdir'])
-                ? $opts['tempdir']
-                : sys_get_temp_dir();
+        } else {
+            $tempdir = $opts['tempdir']
+                ?? sys_get_temp_dir();
             if (is_readable($tempdir)) {
                 $this->_tempdir = $tempdir;
                 $this->_mask |= self::TEMPFILE;

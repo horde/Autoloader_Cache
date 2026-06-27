@@ -8,14 +8,12 @@ list: dev
 type: library
 homepage: https://www.horde.org/libraries/Horde_Autoloader_Cache
 authors:
-  -
-    name: Jan Schneider
+  - name: Jan Schneider
     user: jan
     email: jan@horde.org
     active: true
     role: lead
-  -
-    name: Michael Slusarz
+  - name: Michael Slusarz
     user: slusarz
     email: slusarz@horde.org
     active: false
@@ -45,3 +43,9 @@ dependencies:
       eaccelerator: '*'
       xcache: '*'
 vendor: horde
+keywords: null
+ci-platform:
+  '8.6':
+    - php: ^8
+ci-platform-flags:
+  needs_installer_plugin: false

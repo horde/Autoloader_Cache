@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Copyright 2011-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2011-2026 Horde LLC (http://www.horde.org/)
  *
  * See the enclosed file LICENSE for license information (LGPL). If you
  * did not receive this file, see http://www.horde.org/licenses/lgpl21.
@@ -28,23 +29,23 @@ require_once 'Horde/Autoloader/Cache/Bootstrap.php';
 class Horde_Autoloader_Cache extends Horde_Autoloader_Default
 {
     /* Cache types. @todo: Remove (not used) */
-    const APC = 1;
-    const XCACHE = 2;
-    const EACCELERATOR = 3;
-    const TEMPFILE = 4;
+    public const APC = 1;
+    public const XCACHE = 2;
+    public const EACCELERATOR = 3;
+    public const TEMPFILE = 4;
 
     /* Cache key prefix. */
-    const PREFIX = 'horde_autoloader_cache';
+    public const PREFIX = 'horde_autoloader_cache';
 
     /* Key that holds list of autoloader cache keys. */
-    const KEYLIST = 'horde_autoloader_keys';
+    public const KEYLIST = 'horde_autoloader_keys';
 
     /**
      * Map of all classes already looked up.
      *
      * @var array
      */
-    protected $_cache = array();
+    protected $_cache = [];
 
     /**
      * Cache key name.
@@ -78,9 +79,8 @@ class Horde_Autoloader_Cache extends Horde_Autoloader_Default
     {
         parent::__construct();
 
-        $key = isset($_SERVER['SERVER_NAME'])
-            ? $_SERVER['SERVER_NAME']
-            : '';
+        $key = $_SERVER['SERVER_NAME']
+            ?? '';
         $key .= '|' . __FILE__;
 
         $this->_cachekey = self::PREFIX . '_' . hash('md5', $key);
@@ -93,7 +93,7 @@ class Horde_Autoloader_Cache extends Horde_Autoloader_Default
             $this->_cache = $data;
         }
 
-        register_shutdown_function(array($this, 'shutdown'));
+        register_shutdown_function([$this, 'shutdown']);
     }
 
     /**
@@ -165,13 +165,13 @@ class Horde_Autoloader_Cache extends Horde_Autoloader_Default
      */
     public function prune()
     {
-        foreach (array_unique(array_merge($this->_getKeylist(), array($this->_cachekey))) as $val) {
+        foreach (array_unique(array_merge($this->_getKeylist(), [$this->_cachekey])) as $val) {
             $this->_storage->delete($val);
         }
 
-        $this->_cache = array();
+        $this->_cache = [];
 
-        $this->_saveKeylist(array());
+        $this->_saveKeylist([]);
 
         return true;
     }
@@ -186,7 +186,7 @@ class Horde_Autoloader_Cache extends Horde_Autoloader_Default
         $keylist = $this->_storage->get(self::KEYLIST);
 
         return empty($keylist)
-            ? array()
+            ? []
             : $keylist;
     }
 
@@ -202,6 +202,6 @@ class Horde_Autoloader_Cache extends Horde_Autoloader_Default
 
 }
 
-spl_autoload_unregister(array($__autoloader, 'loadClass'));
+spl_autoload_unregister([$__autoloader, 'loadClass']);
 $__autoloader = new Horde_Autoloader_Cache();
 $__autoloader->registerAutoloader();
